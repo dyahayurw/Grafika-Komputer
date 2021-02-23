@@ -1,15 +1,15 @@
-# Project: Garis Algoritma
+# Project: Garis DDA
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = "Garis\ Algoritma.o"
-LINKOBJ  = "Garis Algoritma.o"
+OBJ      = "Garis\ DDA.o"
+LINKOBJ  = "Garis DDA.o"
 LIBS     = -L"C:/Program Files/Dev-Cpp/MinGW64/lib32" -L"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -lopengl32 -lfreeglut -lglu32 -m32
 INCS     = -I"C:/Program Files/Dev-Cpp/MinGW64/include" -I"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files/Dev-Cpp/MinGW64/include" -I"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = "Garis Algoritma.exe"
+BIN      = "Garis DDA.exe"
 CXXFLAGS = $(CXXINCS) -m32
 CFLAGS   = $(INCS) -m32
 RM       = rm.exe -f
@@ -24,5 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-"Garis\ Algoritma.o": Garis\ Algoritma.cpp
-	$(CPP) -c "Garis Algoritma.cpp" -o "Garis Algoritma.o" $(CXXFLAGS)
+"Garis\ DDA.o": Garis\ DDA.cpp
+	$(CPP) -c "Garis DDA.cpp" -o "Garis DDA.o" $(CXXFLAGS)
